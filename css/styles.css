@@ -78,6 +78,7 @@ p {
 
 .link.line {
   position: relative;
+  color: #404bbf;
 }
 
 .link.line::after {
@@ -408,15 +409,15 @@ p {
 .footer {
   background: #2e2f42;
   height: 312px;
-  display: flex; /* Додаємо для горизонтального розташування */
+  display: flex;
   justify-content: flex-start;
-  align-items: center; /* Для вирівнювання по поперечній осі */
+  align-items: center;
   padding: 100px 0;
 }
 
 .container-footer {
   display: flex;
-  align-items: baseline; /* Вирівнювання елементів по базовій лінії */
+  align-items: baseline;
   text-align: left;
   width: 100%;
 }
@@ -425,8 +426,8 @@ p {
   display: flex;
 }
 
-.logo-text {
-  margin-right: 120px; /* Відступ між блоками */
+.with-margin-right {
+  margin-right: 120px;
 }
 
 .logo-footer {
