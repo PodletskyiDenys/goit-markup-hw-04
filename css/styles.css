@@ -73,9 +73,9 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link.line {
   position: relative;
 }
@@ -91,8 +91,7 @@ p {
   background-color: #404bbf;
 }
 .link:hover,
-.link:focus,
-.link.line {
+.link:focus {
   color: #404bbf;
 }
 
@@ -116,6 +115,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-info:hover,
@@ -303,6 +303,7 @@ p {
 .social-link {
   height: 100%;
   width: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links .social-link {
   background-color: rgb(77, 90, 229);
@@ -407,10 +408,25 @@ p {
 .footer {
   background: #2e2f42;
   height: 312px;
+  display: flex; /* Додаємо для горизонтального розташування */
   justify-content: flex-start;
-  align-items: center;
-  text-align: left;
+  align-items: center; /* Для вирівнювання по поперечній осі */
   padding: 100px 0;
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline; /* Вирівнювання елементів по базовій лінії */
+  text-align: left;
+  width: 100%;
+}
+
+.logo-text-container {
+  display: flex;
+}
+
+.logo-text {
+  margin-right: 120px; /* Відступ між блоками */
 }
 
 .logo-footer {
@@ -445,19 +461,15 @@ p {
 }
 
 .social {
-  margin: 0 auto;
-  position: absolute;
-  width: 208px;
-  height: 80px;
-  left: 540px;
-  right: 692px;
-  top: 3256px;
-  bottom: -3024px;
+  display: flex;
+  flex-direction: column;
 }
+
 .social-links-footer {
   display: flex;
   gap: 16px;
 }
+
 .social-link-team {
   width: 40px;
   height: 40px;
@@ -473,6 +485,7 @@ p {
   border-radius: 50%;
   justify-content: center;
 }
+
 .social-link-team .social-ikon-team:hover,
 .social-link-team .social-ikon-team:focus {
   background-color: #31d0aa;
